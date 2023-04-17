@@ -1,12 +1,15 @@
 package com.hotel_booking.hotel_booking.entity;
 
 
+import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
 
 @Entity
+@AllArgsConstructor
+@NoArgsConstructor
 @Table(name = "users")
 @Builder
 public class User {

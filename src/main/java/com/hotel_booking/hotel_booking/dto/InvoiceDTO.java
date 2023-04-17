@@ -10,14 +10,12 @@ import java.math.BigDecimal;
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
-public class RoomDto {
+public class InvoiceDTO{
     private Long id;
 
-    private String name;
+    private BigDecimal amount;
 
-    private int capacity;
+    private boolean paid;
 
-    private boolean available;
-
-    private BigDecimal pricePerNight;
+    private ReservationDTO reservation;
 }

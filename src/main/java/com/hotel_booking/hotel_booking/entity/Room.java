@@ -1,11 +1,15 @@
 package com.hotel_booking.hotel_booking.entity;
 
+import lombok.AllArgsConstructor;
 import lombok.Builder;
+import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
 import java.math.BigDecimal;
 
 @Entity
+@AllArgsConstructor
+@NoArgsConstructor
 @Table(name = "rooms")
 @Builder
 public class Room {

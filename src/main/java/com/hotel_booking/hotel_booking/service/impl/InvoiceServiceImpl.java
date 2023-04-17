@@ -1,5 +1,6 @@
 package com.hotel_booking.hotel_booking.service.impl;
 
+import com.hotel_booking.hotel_booking.dto.InvoiceDTO;
 import com.hotel_booking.hotel_booking.entity.Invoice;
 import com.hotel_booking.hotel_booking.repository.InvoiceRepository;
 import com.hotel_booking.hotel_booking.service.InvoiceService;
@@ -36,5 +37,15 @@ public class InvoiceServiceImpl implements InvoiceService {
     @Override
     public void deleteInvoiceById(Long id) {
         invoiceRepository.deleteById(id);
+    }
+
+    @Override
+    public Invoice addInvoice(InvoiceDTO invoiceDTO) {
+        return invoiceRepository.save(invoiceDTO);
+    }
+
+    @Override
+    public InvoiceDTO updateInvoice(Long id, InvoiceDTO invoiceDTO) {
+        return null;
     }
 }

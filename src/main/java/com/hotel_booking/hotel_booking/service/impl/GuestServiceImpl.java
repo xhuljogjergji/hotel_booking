@@ -1,5 +1,6 @@
 package com.hotel_booking.hotel_booking.service.impl;
 
+import com.hotel_booking.hotel_booking.dto.GuestDTO;
 import com.hotel_booking.hotel_booking.entity.Guest;
 import com.hotel_booking.hotel_booking.repository.GuestRepository;
 import com.hotel_booking.hotel_booking.service.GuestService;

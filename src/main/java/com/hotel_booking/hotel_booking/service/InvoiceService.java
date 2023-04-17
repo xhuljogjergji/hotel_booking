@@ -1,5 +1,6 @@
 package com.hotel_booking.hotel_booking.service;
 
+import com.hotel_booking.hotel_booking.dto.InvoiceDTO;
 import com.hotel_booking.hotel_booking.entity.Invoice;
 import org.springframework.stereotype.Service;
 
@@ -16,4 +17,8 @@ public interface InvoiceService {
     Invoice updateInvoice(Invoice invoice);
 
     void deleteInvoiceById(Long id);
+
+    Invoice addInvoice(InvoiceDTO invoiceDTO);
+
+    InvoiceDTO updateInvoice(Long id, InvoiceDTO invoiceDTO);
 }
